@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.society360">
+
+    <!-- Internet permission for JDBC connection -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Society360">
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity android:name=".SignInActivity" android:exported="true" />
+        <activity android:name=".DashboardActivity" android:exported="true" />
+        <activity android:name=".SocietyDirectoryActivity" android:exported="true" />
+        <activity android:name=".DashboardGridItem" android:exported="true" />
+        <activity android:name=".DashboardItem" android:exported="true" />
+        <activity android:name=".FeatureListActivity" android:exported="true" />
+        <activity android:name=".SecurityGuardInfoActivity" android:exported="true" />
+        <activity android:name=".ReportActivity" android:exported="true" />
+        <activity android:name=".PollsActivity" android:exported="true" />
+        <activity android:name=".MemberRequestsActivity" android:exported="true" />
+        <activity android:name=".VisitorManagementActivity" android:exported="true" />
+        <activity android:name=".SocietyAccountsActivity" android:exported="true" />
+        <activity android:name=".OnlineHallBookingActivity" android:exported="true" />
+        <activity android:name=".MaintenanceRentActivity" android:exported="true" />
+
+    </application>
+
+</manifest>
